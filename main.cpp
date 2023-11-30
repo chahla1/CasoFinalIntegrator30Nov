@@ -51,6 +51,8 @@ void load_script()
 
 
 int main() {
+    return 0;
+
 
 }
 
