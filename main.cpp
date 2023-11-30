@@ -40,6 +40,14 @@ void load_script(const string& filename, bool show_script = false){
     }
 
 }
+void load_script()
+{
+    string filename;
+    cout << "Archivo: ";
+    cin >> filename;
+    load_script(filename, true);
+}
+
 
 
 int main() {
