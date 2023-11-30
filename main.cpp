@@ -22,7 +22,21 @@ void load_script(const string& filename, bool show_script = false){
             cerr << "Error al abrir el archivo: " << filename << endl;
             return;
         }
+        string script((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
 
+        if (show_script)
+        {
+            cout << ColorConsole::fg_blue << ColorConsole::bg_white;
+            cout << script << endl;
+        }
+
+        consoleBox->new_text();
+        consoleBox->set_text(script);
+
+    }
+    catch (const exception& e)
+    {
+        cerr << "Error durante la lectura del archivo: " << e.what() << endl;
     }
 
 }
