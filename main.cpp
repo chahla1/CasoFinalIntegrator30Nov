@@ -16,6 +16,14 @@ struct ConsoleBox
 ConsoleBox *consoleBox = new ConsoleBox; // suponemos que ya está inicializado
 
 void load_script(const string& filename, bool show_script = false){
+    try {
+        ifstream file(filename, ios::binary);
+        if (!file.is_open()) {
+            cerr << "Error al abrir el archivo: " << filename << endl;
+            return;
+        }
+
+    }
 
 }
 
