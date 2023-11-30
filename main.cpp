@@ -15,6 +15,10 @@ struct ConsoleBox
 };
 ConsoleBox *consoleBox = new ConsoleBox; // suponemos que ya está inicializado
 
+void load_script(const string& filename, bool show_script = false){
+
+}
+
 
 int main() {
 
